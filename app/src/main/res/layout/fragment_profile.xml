@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.es.evampsocial.MainView.Profile.ProfileFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="20dp">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/profile_image"
+           android:layout_width="96dp"
+           android:layout_gravity="center"
+           android:layout_height="96dp"
+           android:src="@drawable/ic_account_circle_black_24dp"
+           app:civ_border_width="2dp"
+           app:civ_border_color="#FF000000"/>
+       <AutoCompleteTextView
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="@drawable/rounded_rect"
+           android:hint="First Name"
+           android:paddingEnd="10dp"
+           android:paddingStart="10dp"
+           android:textColor="@color/white"
+           android:textColorHint="@color/white"
+           android:textSize="15sp"
+           android:id="@+id/editText_fName"
+           />
+       <ProgressBar
+           android:id="@+id/new_profile_progressBar"
+           android:layout_gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:indeterminate="true"
+           android:layout_centerInParent="true"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:visibility="invisible"
+
+           />
+       <AutoCompleteTextView
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="@drawable/rounded_rect"
+           android:hint="Last Name"
+           android:paddingEnd="10dp"
+           android:paddingStart="10dp"
+           android:textColor="@color/white"
+           android:textColorHint="@color/white"
+           android:textSize="15sp"
+           android:id="@+id/editText_lName"
+           />
+       <AutoCompleteTextView
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="@drawable/rounded_rect"
+           android:hint="Designation"
+           android:paddingEnd="10dp"
+           android:paddingStart="10dp"
+           android:textColor="@color/white"
+           android:textColorHint="@color/white"
+           android:textSize="15sp"
+           android:id="@+id/editText_About"
+           />
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:text="Submit Info"
+           android:id="@+id/btnUpdateProfile"
+           android:background="@drawable/btnsignin_gradient"/>
+   </LinearLayout>
+
+</FrameLayout>

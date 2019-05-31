@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.es.evampsocial.Login.fragmentLogin"
+        android:label="fragment_fragment_login"
+        tools:layout="@layout/fragment_fragment_login" >
+        <action
+            android:id="@+id/to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.es.evampsocial.Registration.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signUpEmailFragment"
+            app:destination="@id/signUpEmailFragment" />
+        <argument
+            android:name="fnameArg"
+            app:argType="string" />
+        <argument
+            android:name="lastNameArg"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpEmailFragment"
+        android:name="com.es.evampsocial.Registration.SignUpEmailFragment"
+        android:label="fragment_sign_up_email"
+        tools:layout="@layout/fragment_sign_up_email" >
+        <action
+            android:id="@+id/action_signUpEmailFragment_to_mobSignUpFragment"
+            app:destination="@id/mobSignUpFragment" />
+        <action
+            android:id="@+id/action_signUpEmailFragment_to_verifyEmailFragment"
+            app:destination="@id/verifyEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mobSignUpFragment"
+        android:name="com.es.evampsocial.Registration.MobSignUpFragment"
+        android:label="fragment_mob_sign_up"
+        tools:layout="@layout/fragment_mob_sign_up" />
+    <fragment
+        android:id="@+id/verifyEmailFragment"
+        android:name="com.es.evampsocial.Verification.VerifyEmailFragment"
+        android:label="fragment_verify_email"
+        tools:layout="@layout/fragment_verify_email" />
+
+</navigation>

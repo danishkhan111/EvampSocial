@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud2"
+    tools:context=".Registration.SignUpEmailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        >
+
+    <ImageView
+        android:id="@+id/ivJoinUs"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/joinus_text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up With Email"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:id="@+id/atvEmailSignUp"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_rect"
+            android:drawableLeft="@drawable/icon_mail"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/icon_mail"
+            android:hint="Email"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"/>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+
+                android:id="@+id/btnVerifyStatus"
+                android:background="@drawable/check"
+
+                />
+        </LinearLayout>
+        <AutoCompleteTextView
+            android:id="@+id/atvPasswordSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_rect"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/icon_password"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_gravity="right"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btnsignin_gradient"
+            android:text="Verify Email"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/btnMobSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="right"
+            android:background="@drawable/btnsignup_gradient"
+            android:hint="Login With Mobile No"
+            android:textColorHint="#fff"/>
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/fnameTextView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:hint="First Name Of User"-->
+            <!--android:textColorHint="#fff"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/lnameTextView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:hint="Last Name Of User"-->
+            <!--android:textColorHint="#fff"/>-->
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
